@@ -1,0 +1,105 @@
+* AYUDA PROBE *
+---------------
+www.jaojsoft.com
+----------------
+
+0-- VERSIÓN
+
+1-- DESCRIPCIÓN
+
+2-- EJEMPLO
+
+3-- NOTAS
+
+4-- EDITOR
+
+5-- AGRADECIMIENTOS
+
+6-- CONTACTO
+
+
+
+-----------------------------------------------------------------
+
+0) VERSIÓN
+
+-Primera versión de PROBE, 1.0.0.
+
+
+1) DESCRIPCIÓN
+
+-El propósito de este juego es el de averiguar una palabra, en la cual sus letras se hayan desordenadas. 
+
+-El juego se divide en temas, cada tema tiene varias palabras (o niveles), los cuales debemos averiguar en un tiempo dado. 
+
+-Cuanto menos tiempo utilicemos, más puntos conseguiremos.
+
+-También se dispone de 5 comodines, con los que obtenemos la primera letra de la palabra.
+
+
+
+
+
+2) EJEMPLO
+
+-Si elegimos por ejemplo el tema 'Planetas del Sistema Solar', deberemos averiguar las palabras con letras desordenadas que corresponden a planetas del sistema solar. 
+
+Suponiendo que la primera palabra fuera 'Neptuno', nos saldría:
+
+Palabra: notupNe
+Letras : 7
+
+Y deberíamos averiguar la palabra dentro del tiempo indicado.
+
+
+
+
+
+3) NOTAS
+
+-El desorden de las letras es aleatorio (es decir si la palabra es NEPTUNO, unas veces saldrá NOTUPNE, otras NTUOPEN, etc)
+
+-Los acentos no cuentan, aunque una palabra debiera llevar acento, no se pone (ejemplo: ÁGUILA lleva acento, pero en Probe sería AGUILA, sin acento).
+
+-No se distingue entre mayúsculas o minúsculas, da igual.
+
+
+
+
+
+4) EDITOR
+
+-Probe contiene un editor para crear/editar tus propios temas, accesible desde el menú principal.
+
+-Su funcionamiento es muy sencillo, explicado en el mismo editor.
+
+-Si creas tus propios temas, por favor mándalos a: ja@jaojsoft.com para incluirlo en la próxima versión del juego 
+(Utiliza GUARDAR COMO... y nos mandas el fichero que guardes)
+
+
+
+
+
+5) AGRADECIMIENTOS
+
+-Este programa utiliza dos componentes externos: psvBeeper y LCDDisplay.
+
+*Gracias a Serhiy Perevoznyk por su componente gratuito 'psvBeeper' (para reproducir archivos Midi). Éste y más componentes los encontraréis en: http://users.chello.be/ws36637/
+
+*Gracias a Luis Iglesias por su componente gratuito 'LCDDisplay'.
+
+-Mi agradecimiento va también para 'Softonic' (www.softonic.com), buen sitio de descarga de software, por publicarme siempre los programas que les envío.
+
+-También agradecer a aquellas personas que usan mis programas y dejan sus opiniones en la web (www.jaojsoft.com)
+
+
+
+
+
+6) CONTACTO
+
+Jaoj Soft
+	ja@jaojsoft.com
+		www.jaojsoft.com
+
+Visita la web para obtener éste y más juegos freeware.
