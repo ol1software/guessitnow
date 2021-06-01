@@ -12,7 +12,6 @@ type
     listafich: TFileListBox;
     contenido: TMemo;
     lfichero: TLabel;
-    Image3: TImage;
     Image4: TImage;
     Image6: TImage;
     imgempezar: TImage;
@@ -32,6 +31,7 @@ type
     Image2: TImage;
     LinkLabel1: TLinkLabel;
     StaticText1: TStaticText;
+    StaticText2: TStaticText;
     procedure listaClick(Sender: TObject);
     procedure Image3Click(Sender: TObject);
     procedure Image6Click(Sender: TObject);
@@ -160,7 +160,7 @@ procedure TForm2.imgempezarClick(Sender: TObject);
 begin
 if PChar(lfichero.caption)='lfichero' then
                Begin
-Application.MessageBox( 'selecciona un tema de la lista superior',
+Application.MessageBox( 'Select a theme',
    '@ol1software',  MB_OK  );
           exit;
                End;
@@ -219,7 +219,7 @@ end;
 procedure TForm2.FormCreate(Sender: TObject);
 begin
   if Application.MessageBox(
-   'Juego gratis por... OL1 SOFTWARE. Si te gusta, se agradece un tweet<<<',
+   'Free game by... OL1 SOFTWARE. If you like, please tweet !<<<',
    '@ol1software',  MB_OK  ) = 1 then
    begin
      // Respuesta Yes
@@ -230,7 +230,7 @@ end;
 procedure TForm2.FormMouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Seleccione el tema que desea jugar en el recuadro superior y haga click en -Empezar-';
+barra.simpletext:='Select theme and play';
 end;
 
 procedure TForm2.Image3MouseMove(Sender: TObject; Shift: TShiftState; X,
@@ -248,28 +248,28 @@ end;
 procedure TForm2.Image4MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Ayuda del programa';
+barra.simpletext:='Help';
 
 end;
 
 procedure TForm2.Image1MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Editor de temas';
+barra.simpletext:='Editor';
 
 end;
 
 procedure TForm2.Image2MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Visite la web de Jaoj Soft, obtenga más programas free como éste o deje su opinión en el libro de visitas';
+barra.simpletext:='www.ol1software.com';
 
 end;
 
 procedure TForm2.Image6MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Salir a windows...';
+barra.simpletext:='exit';
 
 end;
 
@@ -281,13 +281,13 @@ end;
 procedure TForm2.Image7MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Opciones del juego';
+barra.simpletext:='www.ol1software.com';
 end;
 
 procedure TForm2.imgempezarMouseMove(Sender: TObject; Shift: TShiftState;
   X, Y: Integer);
 begin
-barra.simpletext:='Pulse para empezar a jugar al tema seleccionado';
+barra.simpletext:='click play';
 end;
 
 procedure TForm2.tabsChange(Sender: TObject);
@@ -299,14 +299,14 @@ end;
 procedure TForm2.Panel1MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Niveles de los que consta la partida seleccionada';
+barra.simpletext:='levels';
 
 end;
 
 procedure TForm2.Panel2MouseMove(Sender: TObject; Shift: TShiftState; X,
   Y: Integer);
 begin
-barra.simpletext:='Tiempo en segundos para cada nivel';
+barra.simpletext:='Level time in sec';
 
 end;
 

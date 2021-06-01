@@ -4,14 +4,13 @@ interface
 
 uses
   Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
-  Dialogs, StdCtrls, ComCtrls, ToolWin;
+  Dialogs, StdCtrls, ComCtrls, ToolWin, Vcl.ExtCtrls;
 
 type
   TForm7 = class(TForm)
-    ToolBar1: TToolBar;
-    ToolButton1: TToolButton;
-    ToolButton2: TToolButton;
     Memo1: TMemo;
+    Memo2: TMemo;
+    Panel1: TPanel;
     procedure ToolButton1Click(Sender: TObject);
     procedure FormShow(Sender: TObject);
     procedure omusikClick(Sender: TObject);
@@ -19,6 +18,7 @@ type
     procedure oresolutorClick(Sender: TObject);
     procedure ipistasClick(Sender: TObject);
     procedure Memo1Click(Sender: TObject);
+    procedure Panel1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -73,6 +73,11 @@ procedure TForm7.oresolutorClick(Sender: TObject);
 begin
 //if oresolutor.Checked then //form2.mopc.Lines[2]:='1' else //form2.mopc.Lines[2]:='0';
 
+end;
+
+procedure TForm7.Panel1Click(Sender: TObject);
+begin
+FORM7.Close;
 end;
 
 procedure TForm7.ipistasClick(Sender: TObject);

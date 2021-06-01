@@ -1,9 +1,9 @@
 object Form6: TForm6
   Left = 64
   Top = 75
-  Width = 621
-  Height = 479
-  Caption = 'Probe - Editor'
+  Caption = ' Editor'
+  ClientHeight = 440
+  ClientWidth = 605
   Color = clWhite
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -26,9 +26,9 @@ object Form6: TForm6
   object Label6: TLabel
     Left = 256
     Top = 8
-    Width = 132
+    Width = 89
     Height = 13
-    Caption = 'Ficheros (temas) disponibles'
+    Caption = 'AVAILABLE FILES'
   end
   object listafich: TFileListBox
     Left = 256
@@ -83,16 +83,16 @@ object Form6: TForm6
     object Label1: TLabel
       Left = 18
       Top = 8
-      Width = 71
+      Width = 31
       Height = 13
-      Caption = 'T'#237'tulo del tema'
+      Caption = 'NAME'
     end
     object Label2: TLabel
       Left = 13
       Top = 56
-      Width = 84
+      Width = 40
       Height = 13
-      Caption = 'Niveles (palabras)'
+      Caption = 'LEVELS'
     end
     object Label3: TLabel
       Left = 117
@@ -100,13 +100,14 @@ object Form6: TForm6
       Width = 68
       Height = 13
       Caption = 'Tiempo x nivel'
+      Visible = False
     end
     object Label4: TLabel
-      Left = 17
-      Top = 104
-      Width = 72
+      Left = 18
+      Top = 101
+      Width = 53
       Height = 13
-      Caption = 'Nombre fichero'
+      Caption = 'FILENAME'
     end
     object Edit1: TEdit
       Left = 16
@@ -135,6 +136,7 @@ object Form6: TForm6
       MinValue = 0
       TabOrder = 2
       Value = 5
+      Visible = False
     end
     object fic: TEdit
       Left = 16
@@ -149,7 +151,7 @@ object Form6: TForm6
     Top = 208
     Width = 177
     Height = 25
-    Caption = 'Cargar fichero seleccionado'
+    Caption = 'LOAD FILE'
     TabOrder = 4
     OnClick = Button1Click
   end
@@ -158,7 +160,7 @@ object Form6: TForm6
     Top = 280
     Width = 193
     Height = 25
-    Caption = 'Guardar tema actual'
+    Caption = 'SAVE'
     TabOrder = 5
     OnClick = Button2Click
   end
@@ -167,16 +169,16 @@ object Form6: TForm6
     Top = 232
     Width = 75
     Height = 105
-    Caption = 'Cerrar'
+    Caption = 'CLOSE'
     TabOrder = 6
     OnClick = Button3Click
   end
   object Button4: TButton
-    Left = 256
-    Top = 248
+    Left = 255
+    Top = 249
     Width = 193
     Height = 25
-    Caption = 'Nuevo Tema...'
+    Caption = 'NEW SUBJECT'
     TabOrder = 7
     OnClick = Button4Click
   end
@@ -192,6 +194,31 @@ object Form6: TForm6
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     Lines.Strings = (
+      'INSTRUCTIONS'
+      'To create a new Topic, click on '#39'New'
+      'Subject '#39', indicate the'
+      'name of the file to create and the title of the theme (for'
+      'example: '#39'maresesp.prb'#39
+      'Y'
+      #39'Seas of Spain'#39').'
+      'Then add the words (levels) you want'
+      'In the box'
+      'blue. You can also change the time you want'
+      'assign to each word'
+      '(or level) in '#39'Time x level'#39'.'
+      'When you are done click on '#39'Save topic'
+      'current'#39'.'
+      ''
+      ''
+      'To edit an existing topic, click on the box'
+      'red in the file'
+      'you want to edit and then click on '#39'Upload file'
+      'selected'#39'. Edit what'
+      'then click on '#39'Save current topic'#39'.'
+      ''
+      ''
+      ''
+      ''
       'INSTRUCCIONES'
       'Para crear un nuevo Tema, haga click en '#39'Nuevo '
       'Tema'#39', indique el '
@@ -222,7 +249,7 @@ object Form6: TForm6
     Top = 312
     Width = 113
     Height = 25
-    Caption = 'Guardar como...'
+    Caption = 'SAVE AS'
     TabOrder = 9
     OnClick = Button5Click
   end

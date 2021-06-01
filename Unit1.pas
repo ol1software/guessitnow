@@ -24,11 +24,9 @@ type
     Image1: TImage;
     Panel5: TPanel;
     Panel6: TPanel;
-    Image2: TImage;
     cletras: TStaticText;
     Panel7: TPanel;
     ctiempo: TLabel;
-    Image3: TImage;
     ctema: TStaticText;
     corigen: TStaticText;
     ctexto: TEdit;
@@ -37,6 +35,7 @@ type
     StaticText1: TStaticText;
     iretirar: TImage;
     pista: TStaticText;
+    StaticText2: TStaticText;
     procedure Timer1Timer(Sender: TObject);
     procedure ctextoChange(Sender: TObject);
     procedure Juego;
@@ -75,14 +74,10 @@ begin
 if form1.Visible=false then exit;
 orden:=0;
 timer1.enabled:=false;
-c:=InputBox('GAME OVER!', 'Introduzca su nombre', 'yo')+'('+ctema.caption+')';
-franking.lines.LoadFromFile('ranking.prr');
-franking.Lines.Add(c);
-franking.Lines.Add(inttostr(puntos));
-franking.lines.savetofile('ranking.prr');
+c:=InputBox('GAME OVER!', 'Thanks for playing', 'OL1 SOFTWARE')+'('+ctema.caption+')';
 form1.close;
 form2.Show;
-form3.showmodal;
+
 
 
 end;
@@ -136,7 +131,7 @@ tiempo:=tiempo+tiempomaximo
            else
            tiempo:=tiempo+(tiempomaximo div dificultad);
 
-tiempo:=500;
+tiempo:=50;
 
 timer1.Enabled:=true;
 
